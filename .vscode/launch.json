@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Ingest",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/data_pipeline/ingest.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Build Features",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/data_pipeline/build_features.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Train Model",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/model/train.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Streamlit App",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "app/streamlit_app.py"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
