@@ -29,4 +29,5 @@ jobs:
           git config user.email "actions@github.com"
           git add f1.db model/model.pkl model/feature_cols.pkl model/fill_values.pkl
           git diff --staged --quiet || git commit -m "Automated data + model update"
+          git pull --rebase origin main
           git push
